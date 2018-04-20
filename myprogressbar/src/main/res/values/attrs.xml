@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HorizontalProgressBar">
+
+
+        <attr name="progressColor" format="reference|color" />
+        <attr name="progress" format="reference|integer" />
+        <attr name="maxProgress" format="reference|integer" />
+        <attr name="progressStyle" />
+    </declare-styleable>
+    <attr name="progressStyle">
+        <enum name="normal" value="0" />
+        <enum name="splash" value="1" />
+    </attr>
+
+
+</resources>

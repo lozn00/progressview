@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+
+        />
+
+
+    <cn.qssq666.progressbar.HorizontalProgressBar
+        android:id="@+id/horizontalprogr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffff00"
+        app:maxProgress="100"
+        app:progress="20"
+        app:progressColor="@android:color/white" />
+
+    <cn.qssq666.progressbar.HorizontalProgressBar
+        android:id="@+id/horizontalprogr1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        app:maxProgress="100"
+        app:progress="0"
+        app:progressColor="#ff0000"
+        app:progressStyle="splash" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/progress_extra"
+            android:layout_height="wrap_content"
+            android:text="操作下面的seekbar将控制上面的进度条变化,progressStyle:splash表示如果小于等于0，那么是进度从中间循环往两边闪现.类似腾讯微视播放视频缓存中的那种效果."
+            android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_current_progress"
+        android:text="当前操作进度"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/progress_adject"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
